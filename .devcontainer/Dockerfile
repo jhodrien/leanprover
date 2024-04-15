@@ -1,7 +1,7 @@
 FROM ubuntu:24.04
 
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get -y install --no-install-recommends bundler wget unzip git
+    && apt-get -y install --no-install-recommends bundler wget unzip git locales
 
 RUN locale-gen en_GB.UTF-8
 ENV LANG en_GB.UTF-8
